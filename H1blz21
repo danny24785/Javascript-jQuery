@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8" />
+  <title>test script HTML5 & CSS3 van Peter Kassenaar</title>
+	<link rel="stylesheet" href="#" />
+</head>
+<body>
+
+<button id="btnPrompt" onclick="toonprompt();">Voer code in</button>
+<div id="divResult"></div>
+
+<script>
+// Functie
+function toonPrompt(){
+  var code = prompt('Vul uw promotiecode in', 'Uw code');
+  var tekst = 'De code die u invoerde was: ' + code;
+  document.getElementById('divResult').innerHTML = tekst;
+}
+</script>
+
+</body>
+</html>
