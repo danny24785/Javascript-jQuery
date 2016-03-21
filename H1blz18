@@ -1,0 +1,7 @@
+<script>
+  // Een venster met meerdere regels
+  alert ('Welkom bij dit handboek.\n' +
+    'Enkele eigenschappen zijn:\n' +
+    '\t* Javascript\n' + 
+    '\t* jQuery\n');
+</script>
