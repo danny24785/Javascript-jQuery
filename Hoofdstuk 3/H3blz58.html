@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 3, blz 58</title>
+</head>
+<body>
+	<div id="divResult"></div>
+  	<script>
+		// 1. initialisaties
+		var vraag = 'Hoeveel is 20 + 60?';
+		var antwoord = 80;
+		var goed = '<h2>Prima, ga zo door!</h2>';
+		var fout = '<h2>NEIN NEIN NEIN!!!!</h2>';
+		
+		// 2. vraag stellen
+		var response = parseInt(prompt(vraag, '0'));
+		
+		// 3. Controleer het antwoord
+		var resultaat = (response === antwoord) ? goed : fout;
+		
+		// 4. schrijf het resultaat naar het scherm
+		document.getElementById('divResult').innerHTML = resultaat;
+		
+  	</script>
+</body>
+</html>

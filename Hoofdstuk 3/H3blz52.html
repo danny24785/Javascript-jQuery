@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 3, blz 52</title>
+</head>
+<body>
+	<div id="divResult"></div>
+  	<script>
+  		var a = 10;
+		var b = 10;
+		var abPlus = a += ++b;
+		
+		var aMin = 10;
+		var bMin = 10;
+		var abMin = aMin += --bMin;
+		
+		document.getElementById('divResult').innerHTML = abPlus + "<br>" + abMin;
+  	</script>
+</body>
+</html>

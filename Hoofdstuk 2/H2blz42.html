@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 2, blz 42</title>
+</head>
+<body>
+	<div id="divResult"></div>
+  	<script>
+  		// Lees twee getallen in en tel ze op
+		var getal1 = prompt('Vul het eerste getal in', 'Getal 1');
+		var getal2 = prompt('Vul het tweede getal in', 'Getal 2');
+		
+		// Korte schrijfwijze van H2blz40.html
+		var tekst = getal1 + ' + ' + getal2 + ' = ' +  (parseFloat(getal1) + parseFloat(getal2));
+		
+		// Totaalwaarde in het document plaatsen
+		document.getElementById('divResult').innerHTML = tekst;
+  	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 2, blz 45</title>
+</head>
+<body>
+	<div id="divResult"></div>
+  	<script>
+  		// string in een variabele met enters en tabs
+		var tekst = "Dit is een string";
+		var lengte = tekst.length;
+		var index_e = tekst.indexOf('e');
+		var replace_geen = tekst.replace('een', 'geen');
+		var stringUppercase = tekst.toUpperCase();
+		var stringUppercaseReplace = tekst.replace('een', 'geen').toUpperCase()
+		
+		// schrijf de lengte van de string uit variabele 'tekst' naar het scherm
+		document.getElementById('divResult').innerHTML = lengte;
+		
+		// schrijf dezelfde lengte naar de console log van de developers toobbar
+		console.log(lengte);
+		
+		// meer stringfuncties weggescreven naar de console log
+		console.log(index_e);
+		console.log(replace_geen);
+		console.log(stringUppercase);
+		console.log(stringUppercaseReplace);
+  	</script>
+</body>
+</html>
