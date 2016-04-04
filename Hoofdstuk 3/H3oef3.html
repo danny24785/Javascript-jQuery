@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 3, oefening 3</title>
+</head>
+<body>
+	<div id="divResult"></div>
+	<script>
+    	var a = parseFloat(prompt('Geef het eerste getal op, 0'));
+    	var b = parseFloat(prompt('Geef het tweede getal op, 0'));
+		var greaterThan = a > b;
+		var smallerThan = a < b;
+		var isEven = a === b;
+		document.getElementById('divResult').innerHTML = "De getallen die u invoerde waren " + a + " en " + b + "<br><hr>Is het eerste getal groter dan het tweede getal? " + greaterThan + "<br>Is het eerste getal kleiner dan het tweede getal? " + smallerThan + "<br>Is het eerste getal gelijk aan het tweede getal? " + isEven;
+		
+		console.log(greaterThan);
+		console.log(smallerThan);
+		console.log(isEven);
+  	</script>
+</body>
+</html>
