@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 3, oefening 5b</title>
+</head>
+<body>
+	<h2>Hoofdstuk 3, oefening 5b</h2>
+    <div id="yourNumbers"></div>
+    <div id="divResult"></div>
+	<script>
+    	var a = parseFloat(prompt('Geef het eerste getal op, 0'));
+    	var b = parseFloat(prompt('Geef het tweede getal op, 0'));
+		
+		document.getElementById('yourNumbers').innerHTML = 'De getallen die u invoerde waren ' + a + ' en ' + b;
+		
+		var resultaat = (a > b) 
+			? 'het eerste getal is groter dan het tweede getal' 
+			: (a == b)
+				? 'het eerste getal is gelijk aan het tweede getal'
+				: 'het tweede getal is groter dan het eerste getal'
+		document.getElementById('divResult').innerHTML = resultaat ;
+  	</script>
+</body>
+</html>
