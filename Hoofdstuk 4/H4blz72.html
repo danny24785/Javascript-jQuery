@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, blz 70</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+    	// 1. Functie declareren
+		function getVolume(hoogte, breedte, diepte) {
+		
+			// 2. Check aantal parameters via arguments[]
+			if (arguments.length !== 3) {
+				document.getElementById('divResult').innerHTML = '<h2>Onjuist aantal parameters opgegeven!</h2>'
+				return;
+			}
+			// 3. Aantal parameters is correct, voer de berekining uit
+			var volume = hoogte * breedte * diepte;
+			document.getElementById('divResult').innerHTML = '<h2>Volume: ' + volume + ' cm<sup>3</sup></h2>';
+		}
+		
+		// 4. Functie aangeroepen met (opzettelijk) te weining argumenten (parameters)
+		getVolume(3, 3);
+  	</script>
+</body>
+</html>
