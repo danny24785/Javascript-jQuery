@@ -4,7 +4,10 @@
   	<title>Javascript/jQuery - Hoofdstuk 4, blz 78</title>
 </head>
 <body>
+    <h2>.reverse</h2>
     <div id="divResult"></div>
+    <h2>.sort</h2>
+    <div id="divSort"></div>
 	<script>
 		// 1. Join array into string
 		var tientallen = [10, 20 , 30, 40, 50];
@@ -18,6 +21,16 @@
 		
 		console.log(aString);
 		console.log(aString.split(','));
+		
+		// 3. tientallen.reverse
+		console.log(tientallen);
+		console.log(tientallen.reverse());
+		document.getElementById('divResult').innerHTML = tientallen.reverse();
+		
+		// 4. colors.sort
+		var colors = ['rood', 'geel', 'blauw', 'groen', 'zwart', 'wit'];
+		console.log(colors)
+		console.log(colors.sort())
   	</script>
 </body>
 </html>
