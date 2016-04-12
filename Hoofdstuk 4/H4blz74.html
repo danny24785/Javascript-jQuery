@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, blz 74</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// 1. Functie declareren
+		function kwadraat (getal) {
+			// 1a. Kwadraat uitrekenen
+			var kwadraat = getal * getal;
+			
+			// 1b.
+			var resultaat = 'OK';
+			
+			// 1c. Resultaatobject teruggeven
+			return {
+				uitkomst: kwadraat,
+				resultaat: resultaat
+			};
+		}
+		
+		// 2. getal waarvan het kwadraat moet worden uitgerekend in een variabele
+		var getalVoorKwadraat = prompt('Voer het getal in waarvan u het kwadraat wilt berekenen.');
+		
+		// 3. Aanroep van de functie
+		var aanroep = kwadraat(getalVoorKwadraat);
+		
+		// 4. de variabele 'aanroep' is nu een object met twee leden (members). De inhoud van het lid 'uitkomst' moet naar het scherm worden geschreven.
+		document.getElementById('divResult').innerHTML = 'het kwadraat van ' + getalVoorKwadraat + ' is: ' + aanroep.uitkomst;
+  	</script>
+</body>
+</html>
