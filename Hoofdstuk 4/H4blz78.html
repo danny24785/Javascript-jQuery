@@ -6,11 +6,18 @@
 <body>
     <div id="divResult"></div>
 	<script>
-		// 1. De array
+		// 1. Join array into string
 		var tientallen = [10, 20 , 30, 40, 50];
 		
 		console.log(tientallen);
 		console.log(tientallen.join());
+		console.log(tientallen.join(' - '));
+		
+		// 2. Split string into array
+		var aString = 'aap, noot, mies';
+		
+		console.log(aString);
+		console.log(aString.split(','));
   	</script>
 </body>
 </html>
