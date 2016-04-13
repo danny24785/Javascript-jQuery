@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, oefening 4</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// numbers to be used in calculation
+		var a = 3;
+		var b = 5;
+		
+		// function to add up the variables 'getal1' and 'getal2' up to each other
+		function addNumbers (getal1, getal2) {
+			var resultaat = getal1 + getal2;
+			document.getElementById('divResult').innerHTML = 
+				'het eerste getal is: ' + a + '<br>' + 
+				'het tweede getal is: ' + b + '<br>' + 
+				'<hr>' + 
+				a + ' + ' + b + ' = ' + resultaat;
+		};
+		
+		// call the function 'addNumbers'
+		addNumbers(a, b);
+  	</script>
+</body>
+</html>

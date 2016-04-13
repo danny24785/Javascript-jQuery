@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, oefening 6</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// varialbes for parameters
+		var a = 10;
+		var b = 20;
+		var c = 30;
+		
+		// function declaration
+		function aFunction (parameter1, parameter2, parameter3) {
+			document.getElementById('divResult').innerHTML = 
+				'number of parameters used in function <em>aFunction</em>: ' + arguments.length;
+		}
+		
+		// calling function 'aFunction'
+		aFunction(a, b);
+  	</script>
+</body>
+</html>
