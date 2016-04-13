@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, blz 82</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// 1. Een object
+		function boek(titel, auteur) {
+			this.titel = titel;
+			this.auteur = auteur;
+		}
+		
+		var boekHTML = new boek('Handboek HTML', 'Peter Kassenaar');
+		var boekWindows = new boek('Ontdek windows 10', 'Erwin Olij');
+		
+		// 2. Schrijf waarden van dit object naar het scherm
+		document.getElementById('divResult').innerHTML = 
+			'Auteur van het boek <em>' + boekHTML.titel + '</em> is: <strong>' + boekHTML.auteur + '</strong><br>' +
+			'Auteur van het boek <em>' + boekWindows.titel + '</em> is: <strong>' + boekWindows.auteur + '</strong>';		
+  	</script>
+</body>
+</html>

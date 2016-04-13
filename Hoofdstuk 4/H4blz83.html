@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, blz 82</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// 1. Een object
+		var boek = {
+			titel: 'Handboek JavaScript en jQuery',
+			ISBN: '9789059406148',
+			druk: 1,
+			jaar: 2013,
+			auteur: {
+				voornaam: 'Peter',
+				achternaam: 'Kassenaar'
+			},
+			prijs: '19,95',
+			volledige_naam: function () {
+				var volledige_naam = this.auteur.voornaam + '' + this.auteur.achternaam;
+			}
+		};
+		
+		// 2. Schrijf waarden van dit object naar het scherm
+		document.getElementById('divResult').innerHTML = 'Naam auteur: ' + boek.auteur.voornaam + ' ' + boek.auteur.achternaam;
+		
+		// 3. Haal de waarde van het object op met een array
+		var titelBoek = boek["titel"];
+		console.log('Titel: ' + titelBoek);
+		var prijsBoek = boek.prijs;
+		console.log('Prijs: ' + prijsBoek);
+		console.log('Jaar: ' + boek["jaar"]);
+		
+		// 4. Eigenschap toevoegen tijdens de uitvoering (runtime) van het script
+		boek["omschrijving"] = 'Leer alles over JavaScript en jQuery';
+		console.log('Omschrijving: ' + boek['omschrijving']);
+  	</script>
+</body>
+</html>
