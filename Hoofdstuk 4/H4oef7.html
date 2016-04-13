@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, oefening 7</title>
+</head>
+<body>
+    <div id="divResult"></div>
+    <div id="divResult2"></div>
+	<script>
+		// array with names
+		var brakingBad = ['Walter White', 'Jesse Pinkman', 'Hank Schrader', 'Flynn', 'Saul Goodman', 'Tuco'];
+		
+		// declaration of function to show number of records in the array 'brakingBad'
+		function numberOfNames () {
+			document.getElementById('divResult').innerHTML = 'Number of names in the array: ' + brakingBad.length;
+		};
+		// function to write the first, third and fifth name to the screen
+		function firstThirdFifthName () {
+			document.getElementById('divResult2').innerHTML = 'First, third and fifth names are: ' + brakingBad[0] + brakingBad[2] + brakingBad[4];
+		};
+		
+		
+		// calling the function 'numberOfNames'
+		numberOfNames();
+		// calling the function 'firstThirdFifthName'
+		firstThirdFifthName();
+		
+  	</script>
+</body>
+</html>
