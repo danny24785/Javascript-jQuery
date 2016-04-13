@@ -25,6 +25,16 @@
 		// 2. Schrijf waarden van dit object naar het scherm
 		document.getElementById('divResult').innerHTML = 'Naam auteur: ' + boek.auteur.voornaam + ' ' + boek.auteur.achternaam;
 		
+		// 3. Haal de waarde van het object op met een array
+		var titelBoek = boek["titel"];
+		console.log('Titel: ' + titelBoek);
+		var prijsBoek = boek.prijs;
+		console.log('Prijs: ' + prijsBoek);
+		console.log('Jaar: ' + boek["jaar"]);
+		
+		// 4. Eigenschap toevoegen tijdens de uitvoering (runtime) van het script
+		boek["omschrijving"] = 'Leer alles over JavaScript en jQuery';
+		console.log('Omschrijving: ' + boek['omschrijving']);
   	</script>
 </body>
 </html>
