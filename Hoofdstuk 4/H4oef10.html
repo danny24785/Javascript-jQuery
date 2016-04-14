@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, oefening 10</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// object for car
+		var myCar = {
+			numberOfDoors: 3,
+			color: 'rood',
+			brand: 'Peugeot',
+			model: 106,
+			version: '1.1 Accent',
+			engineSize: '1100cc',
+			constructionDate: 1998
+		}
+		
+		// function to write brand and model to the screen
+		function carModel () {
+			document.getElementById('divResult').innerHTML = myCar.brand + ' ' + myCar.model + ' ' + myCar.version;
+		};
+		
+		// call function carModel
+		carModel();
+  	</script>
+</body>
+</html>

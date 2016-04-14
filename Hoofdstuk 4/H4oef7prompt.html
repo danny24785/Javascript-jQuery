@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, oefening 7</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// array with names
+		var brakingBad = ['Walter White', 'Jesse Pinkman', 'Hank Schrader', 'Flynn', 'Saul Goodman', 'Tuco'];
+		
+		// function for prompt to insert extra name
+		function extraName () {
+			var anotherName = prompt('Voer een extra naam in', '');
+			var addName = brakingBad.push(anotherName);
+			var nameToString = brakingBad.join(', ');
+			document.getElementById('divResult').innerHTML = nameToString;
+		};
+		
+		// calling the function 'extraName'
+		extraName();
+		
+  	</script>
+</body>
+</html>
