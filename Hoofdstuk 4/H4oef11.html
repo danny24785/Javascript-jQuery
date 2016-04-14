@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, oefening 11</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// constructor object for car
+		function myCar(numberOfDoors, color, brand, model, version, engineSize, year) {
+			this.numberOfDoors = numberOfDoors;
+			this.color = color;
+			this.brand = brand;
+			this.model = model;
+			this.version = version;
+			this.engineSize = engineSize;
+			this.year = year
+		}
+		
+		// properties of two different cars for object 'myCar'
+		var peugeot = new myCar(3, 'rood', 'Peugeot', 106, '1.1 Accent', '1100cc', 1998);
+		var citroen = new myCar(5, 'groen', 'Citroen', 'AX', '1.4 Furio', '1400cc', 1995);
+		
+		// write stuff about cars to the screen
+		document.getElementById('divResult').innerHTML = 
+			'Mijn huidige auto: ' + peugeot.brand + ' ' + peugeot.model + ' ' + peugeot.version + '<br>' +
+			'Mijn eerste auto: ' + citroen['brand'] + ' ' + citroen['model'] + ' ' + citroen['version'];
+  	</script>
+</body>
+</html>

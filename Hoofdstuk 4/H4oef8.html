@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 4, oefening 8</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+		// array with names
+		var brakingBad = ['Walter White', 'jesse pinkman', 'hank schrader', 'flynn', 'Saul Goodman', 'Tuco'];
+		
+		// function to write array 'brakingBad' to the screen in aphabetical order
+		function wtiteToScreen () {
+			var alphabeticOrder = brakingBad.sort(function (a, b){
+				var x = a.toLowerCase();
+				var y = b.toLowerCase();
+				if (x < y) {
+					return -1;
+				}
+				if (x > y) {
+					return 1;
+				}
+				else {
+					return 0;
+				}
+			});
+			document.getElementById('divResult').innerHTML = alphabeticOrder;
+		};
+		
+		// calling the function 'writeToScreen'
+		wtiteToScreen();
+		
+  	</script>
+</body>
+</html>
