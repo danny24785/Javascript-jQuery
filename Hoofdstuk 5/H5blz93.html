@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  	<title>Javascript/jQuery - Hoofdstuk 5, blz 91</title>
+  	<title>Javascript/jQuery - Hoofdstuk 5, blz 93</title>
 </head>
 <body>
 	<h3>Hoofdstuk 4, blz 91</h3>
     <div id="divResult"></div>
 	<script>
     	// variables
-		var spaargeld = 1000;
+		var spaargeld = 1852;
 						
 		// if else statement
 		if (spaargeld >= 2000) {
 			laptop = true;
 			document.getElementById('divResult').innerHTML = 'Ik kan een nieuwe laptop kopen';
+		}
+		else if (spaargeld >= 1750) {
+			laptop = false;
+			document.getElementById('divResult').innerHTML = 'We zijn er bijna!';
 		}
 		else{
 			laptop = false;

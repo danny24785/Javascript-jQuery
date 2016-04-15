@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Javascript/jQuery - Hoofdstuk 5, blz 96</title>
+</head>
+<body>
+    <div id="divResult"></div>
+	<script>
+    	var kleur = prompt('Vul een kleur in', ' ');
+		
+		switch (kleur) {
+			case 'rood': {
+				document.getElementById('divResult').innerHTML = 
+					'U hebt rood gekozen als kleur';
+				document.getElementById('divResult').style.color = 'red';
+				break;
+			}	
+			case 'blauw': {
+				document.getElementById('divResult').innerHTML = 
+					'U hebt blauw gekozen als kleur';
+				document.getElementById('divResult').style.color = 'blue';
+				break;
+			}
+			case 'geel': {
+				document.getElementById('divResult').innerHTML = 
+					'U hebt geel gekozen als kleur';
+				document.getElementById('divResult').style.color = 'yellow';
+				break;
+			}
+			default: {
+				document.getElementById('divResult').innerHTML = 
+					'U hebt een onbekende kleur gekozen';
+				document.getElementById('divResult').style.color = 'black';
+				break;
+			}
+		}
+	</script>
+</body>
+</html>
