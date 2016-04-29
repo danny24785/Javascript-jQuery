@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Average</title>
+</head>
+<body>
+    <div id="divResult">
+    	<ol id="OrdenedList">
+        	
+        </ol>
+    </div>
+	<script>
+    	var grades = [7, 4, 5, 6, 4 ,5, 8, 9, 10, 2, 5];
+		var numberOfGrades = grades.length;
+		var gradesTotal = grades[0] + grades[1] + grades[2] + grades[3] + grades[4] + grades[5] + grades[6] + grades[7] + grades[8] + grades[9] + grades[10];
+		var average = (gradesTotal / numberOfGrades);
+		var roundUp = average.toFixed(1);
+		
+		document.getElementById('divResult').innerHTML = 'Het gemiddelde cijfer is een: ' + roundUp;
+	</script>
+</body>
+</html>

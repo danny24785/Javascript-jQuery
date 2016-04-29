@@ -6,14 +6,10 @@
 <body>
     <div id="divResult"></div>
 	<script>
-    	var teller = 1;
-		var getal = 10;
-		
-		while (teller <= 10) {
-			teller++;
+    	var getal = 10;
+		for (var teller = 1; teller <= 10; teller++) {
 			document.getElementById('divResult').innerHTML +=
 				teller + ' maal ' + getal + ' = ' + teller * getal + '<br>';
-			
 		}
 	</script>
 </body>
